@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .card {
+      width: 300px;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="text-center">Weather App</h1>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="form-group">
+          <label for="cityInput">City</label>
+          <input type="text" class="form-control" id="cityInput" placeholder="Enter city name">
+        </div>
+
+        <div class="form-group">
+            <label for="countryInput">Country</label>
+            <input type="text" class="form-control" id="countryInput" placeholder="Enter country name">
+          </div>
+
+        <button type="button" class="btn btn-primary" onclick="getWeather()">Get Weather</button>
+
+        <div class="card mt-3" >
+          <div class="card-header">
+            <h5 class="card-title text-center" id="cityName"></h5>
+          </div>
+          <div class="card-body">
+            <p class="card-text" id="weatherDescription"></p>
+            <p class="card-text" id="temperature"></p>
+            <p class="card-text" id="humidity"></p>
+            <p class="card-text" id="windSpeed"></p>
+            <p class="card-text" id="visibility"></p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
